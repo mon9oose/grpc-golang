@@ -1,0 +1,16 @@
+syntax = "proto3";
+package chat;
+option go_package = "./chat";
+
+message GreetingRequest {
+  string name = 1;
+}
+
+message GreetingResponse {
+  int32 status_code = 1;
+  string message = 2;
+}
+
+service GreetingService {
+  rpc SayHello(GreetingRequest) returns (GreetingResponse);
+}
