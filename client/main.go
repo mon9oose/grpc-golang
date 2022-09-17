@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	pb "github.com/saenggeuk/grpc-golang/chat"
+	pb "github.com/saenggeuk/grpc-golang/client/chat"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"log"
